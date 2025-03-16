@@ -98,6 +98,11 @@ require("lazy").setup({
             }
         },
 
+        -- mini.statusline --
+        {
+            "echasnovski/mini.nvim",
+        },
+
         -- yazi --
         {
             "mikavilpas/yazi.nvim",
@@ -146,6 +151,10 @@ vim.keymap.set('n', '<leader>st', builtin.treesitter, { desc = '[S]earch [T]rees
 
 -- lualine
 require('lualine').setup()
+
+-- mini.statusline
+-- NOTE: if lualine is broken, you can use this one
+--require('mini.statusline').setup()
 
 -- yazi
 require('yazi').setup()
